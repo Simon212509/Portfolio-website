@@ -1,147 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simon Pramod — Web Designer & Developer</title>
+<meta name="description" content="Portfolio of Simon Pramod, a Web Design & Development graduate of Edge Hill University." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <nav>
-      <div class="logo">MyPortfolio</div>
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<header class="topbar" id="top">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Simon Pramod<span class="brand-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about"><span class="nav-index">01</span>About</a>
+      <a href="#skills"><span class="nav-index">02</span>Skills</a>
+      <a href="#work"><span class="nav-index">03</span>Work</a>
+      <a href="#contact"><span class="nav-index">04</span>Contact</a>
     </nav>
-  </header>
+    <a class="topbar-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <img src="IMG_9757.JPG" alt="Simon Pramod profile image" class="profile-image" />
-      <h1>Hello, I'm Simon Pramod</h1>
-      <p>3rd year student at Edge Hill University studying Web Design and Development</p>
-    </section>
+<main>
 
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I am currently in my third year of studying Web Design and Development at Edge Hill University, where I am honing my skills in both front-end, back-end web development and UX. Throughout my academic journey, I have developed skills in HTML, CSS, JavaScript, Python, PHP, and version control using Git. I am constantly looking for new challenges and opportunities to expand my skill set. I am currently working on several course projects which are helping to refine my web development and UX design skills.
-      </p>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">FIG. 01 — WEB DESIGNER &amp; DEVELOPER, BA (HONS)</p>
+        <h1>Simon Pramod</h1>
+        <p class="hero-role">I plan interfaces before I style them, then build the logic that
+          holds them together. Graduate of Edge Hill University with a Bachelor's with Honours
+          in Web Design &amp; Development.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View the work</a>
+          <a href="#contact" class="btn btn-ghost">Say hello</a>
+        </div>
+      </div>
 
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <div class="skill"><label>HTML</label><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></div>
-      <div class="skill"><label>CSS</label><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
-      <div class="skill"><label>JavaScript</label><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></div>
-      <div class="skill"><label>PHP</label><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></div>
-      <div class="skill"><label>Python</label><div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div></div>
-      <div class="skill"><label>Git</label><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></div>
-      <div class="skill"><label>Figma</label><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
-    </section>
+      <div class="hero-diagram reveal">
+        <div class="diagram-frame">
+          <img src="images/grad pic.png" alt="Portrait of Simon Pramod" />
+          <span class="corner corner-tl"></span>
+          <span class="corner corner-br"></span>
+        </div>
+        <div class="diagram-caption">FIG. 01 — PORTRAIT · SCALE 1:1 · SHEET 01/04</div>
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
+        <ul class="callout-list">
+          <li><span class="callout-mark">HTML/CSS</span>Structure &amp; styling</li>
+          <li><span class="callout-mark">JavaScript</span>Interactivity</li>
+          <li><span class="callout-mark">PHP/Python</span>Server-side logic</li>
+          <li><span class="callout-mark">Git</span>Version control</li>
+          <li><span class="callout-mark">Figma</span>Interface design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <!-- Coffee/Bakery Project -->
-      <div class="project">
-        <div class="project-info">
-          <h3>Coffee/Bakery Shop Website</h3>
-          <p>A responsive website with Home, About, Menu, Blog, Gallery, and Contact pages.</p>
-          <div class="image-collage">
-            <div class="collage-item">
-              <a href="Screenshot 2025-05-03 at 04.48.21.png" data-lightbox="coffee-shop" data-title="Home Page">
-                <img src="Screenshot 2025-05-03 at 04.48.21.png" alt="Coffee Shop Home Page">
-              </a>
-              <span class="collage-label">Home</span>
-            </div>
-            <div class="collage-item">
-              <a href="Screenshot 2025-05-03 at 04.48.48.png" data-lightbox="coffee-shop" data-title="About Page">
-                <img src="Screenshot 2025-05-03 at 04.48.48.png" alt="Coffee Shop About Page">
-              </a>
-              <span class="collage-label">About</span>
-            </div>
-            <div class="collage-item">
-              <a href="Screenshot 2025-04-30 at 13.23.06.png" data-lightbox="coffee-shop" data-title="Menu Page">
-                <img src="Screenshot 2025-04-30 at 13.23.06.png" alt="Coffee Shop Menu Page">
-              </a>
-              <span class="collage-label">Menu</span>
-            </div>
-            <div class="collage-item">
-              <a href="Screenshot 2025-05-03 at 04.50.11.png" data-lightbox="coffee-shop" data-title="Blog Page">
-                <img src="Screenshot 2025-05-03 at 04.50.11.png" alt="Coffee Shop Blog Page">
-              </a>
-              <span class="collage-label">Blog</span>
-            </div>
-            <div class="collage-item">
-              <a href="Screenshot 2025-05-03 at 04.51.08.png" data-lightbox="coffee-shop" data-title="Gallery Page">
-                <img src="Screenshot 2025-05-03 at 04.51.08.png" alt="Coffee Shop Gallery Page">
-              </a>
-              <span class="collage-label">Gallery</span>
-            </div>
-            <div class="collage-item">
-              <a href="Screenshot 2025-05-03 at 04.50.22.png" data-lightbox="coffee-shop" data-title="Contact Page">
-                <img src="Screenshot 2025-05-03 at 04.50.22.png" alt="Coffee Shop Contact Page">
-              </a>
-              <span class="collage-label">Contact</span>
-            </div>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head reveal">
+      <span class="sheet-no">SHEET 01 / ABOUT</span>
+      <h2>A developer who sketches first.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a graduate of Edge Hill University with a Bachelor's with Honours in Web Design
+          and Development. I enjoy creating modern, user-focused digital experiences by
+          combining strong design principles with clean, responsive code.</p>
+        <p>My experience spans the full web design and development process, from user
+          research, wireframing, and interface design in Figma to building responsive websites
+          and web applications using HTML, CSS, JavaScript, PHP, Python, Laravel, WordPress,
+          Java, and SQL. I also use Git and GitHub for version control and collaborative
+          development, ensuring projects remain organised and maintainable.</p>
+        <p>Throughout my degree, I treated every project as if it were for a real client —
+          starting by understanding user needs, planning intuitive user journeys, designing
+          accessible interfaces, and developing high-quality, responsive solutions. I have
+          experience applying user-centred design, usability testing, accessibility standards
+          including ARIA, and UX best practices to create websites that are both functional and
+          engaging.</p>
+      </div>
+      <dl class="about-facts reveal">
+        <div><dt>Qualification</dt><dd>BA (Hons) Web Design &amp; Development</dd></div>
+        <div><dt>University</dt><dd>Edge Hill University</dd></div>
+        <div><dt>Focus</dt><dd>UX/UI · front-end · accessibility</dd></div>
+        <div><dt>Looking for</dt><dd>Graduate &amp; junior roles — Web / UX/UI Design &amp; Development</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-head reveal">
+      <span class="sheet-no">SHEET 02 / SKILLS</span>
+      <h2>Skills &amp; tools</h2>
+    </div>
+
+    <div class="legend reveal">
+      <div class="legend-row legend-head">
+        <span>Skill</span><span>Category</span><span>Level</span><span class="legend-bar-head">Spec</span>
+      </div>
+
+      <div class="legend-row" style="--pct:90">
+        <span class="legend-name">HTML</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Advanced</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:85">
+        <span class="legend-name">CSS</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Advanced</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:80">
+        <span class="legend-name">JavaScript</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Proficient</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:75">
+        <span class="legend-name">PHP</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Proficient</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:70">
+        <span class="legend-name">Python</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Comfortable</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:65">
+        <span class="legend-name">Java</span>
+        <span class="legend-tag">Language</span>
+        <span class="legend-level">Comfortable</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:70">
+        <span class="legend-name">SQL</span>
+        <span class="legend-tag">Database</span>
+        <span class="legend-level">Comfortable</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:70">
+        <span class="legend-name">Laravel</span>
+        <span class="legend-tag">Framework</span>
+        <span class="legend-level">Comfortable</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:70">
+        <span class="legend-name">WordPress</span>
+        <span class="legend-tag">CMS</span>
+        <span class="legend-level">Comfortable</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:80">
+        <span class="legend-name">Git &amp; GitHub</span>
+        <span class="legend-tag">Workflow</span>
+        <span class="legend-level">Proficient</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+      <div class="legend-row" style="--pct:85">
+        <span class="legend-name">Figma</span>
+        <span class="legend-tag">Design tool</span>
+        <span class="legend-level">Advanced</span>
+        <span class="legend-bar"><span class="legend-fill"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-head reveal">
+      <span class="sheet-no">SHEET 03 / WORK</span>
+      <h2>Selected work</h2>
+      <p class="section-intro">Four projects anchored my degree: an Accessible Museum
+        Collection site built around inclusive design, a Coffee &amp; Bakery Shop site, the
+        FORGE workout system, and an Artist Portfolio &amp; Music Promotion site. The two below
+        are documented in full — ask and I'll walk through the others.</p>
+    </div>
+
+    <!-- Project 01: Roll Bakery -->
+    <article class="project reveal">
+      <div class="project-head">
+        <span class="project-index">01</span>
+        <div class="project-title">
+          <h3>Roll — Artisan Bakery &amp; Coffee</h3>
+          <p>A six-page responsive marketing site for a fictional bakery: home, about, menu,
+            gallery, blog and contact, built to a consistent visual system.</p>
+        </div>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>UX</span></div>
+      </div>
+
+      <div class="showcase">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">roll-bakery.site</span>
+          </div>
+          <div class="browser-body">
+            <img id="bakery-display" src="images/bakery-home.png" alt="Roll Bakery — home page" />
           </div>
         </div>
-      </div>
-
-      <!-- Gym Workout Project -->
-      <div class="project">
-        <div class="project-info">
-          <h3>Gym Workout System</h3>
-          <p>A web app to track workouts, create routines,book PT training and nutrition advice.</p>
-          <a href="Screenshot 2025-04-30 at 13.41.03.png" data-lightbox="gym-system" data-title="Gym Workout System Interface">
-            <img src="Screenshot 2025-04-30 at 13.41.03.png" alt="Screenshot of Gym Workout System" class="project-image" />
-          </a>
+        <div class="showcase-tabs" role="tablist" aria-label="Roll Bakery pages">
+          <button class="tab active" data-target="images/bakery-home.png" data-alt="Roll Bakery — home page">Home</button>
+          <button class="tab" data-target="images/bakery-about.png" data-alt="Roll Bakery — about page">About</button>
+          <button class="tab" data-target="images/bakery-menu.png" data-alt="Roll Bakery — menu page">Menu</button>
+          <button class="tab" data-target="images/bakery-gallery.png" data-alt="Roll Bakery — gallery page">Gallery</button>
+          <button class="tab" data-target="images/bakery-blog.png" data-alt="Roll Bakery — blog page">Blog</button>
+          <button class="tab" data-target="images/bakery-contact.png" data-alt="Roll Bakery — contact page">Contact</button>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" name="name" required />
-        <input type="email" placeholder="Your Email" name="email" required />
-        <textarea placeholder="Your Message" name="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <p id="form-message"></p>
-    </section>
-  </main>
+    <!-- Project 02: FORGE Training System -->
+    <article class="project reveal">
+      <div class="project-head">
+        <span class="project-index">02</span>
+        <div class="project-title">
+          <h3>FORGE — Training System</h3>
+          <p>A four-pillar training app: workout programs with video demos, diet plans with a
+            working macro calculator, 1-to-1 coach booking, and a progress log that runs
+            entirely client-side.</p>
+        </div>
+        <div class="project-tags"><span>JavaScript</span><span>Local storage</span><span>UI system</span></div>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Simon Pramod</p>
-    <div class="social-links">
-      <a href="https://github.com/Simon212509" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/simon-pramod-a3172a221/" target="_blank">LinkedIn</a>
-      <a href="https://x.com/Simon21003" target="_blank">Twitter</a>
+      <div class="showcase">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">forge.training</span>
+          </div>
+          <div class="browser-body">
+            <img id="forge-display" src="images/forge-dashboard.png" alt="FORGE — dashboard" />
+          </div>
+        </div>
+        <div class="showcase-tabs" role="tablist" aria-label="FORGE pages">
+          <button class="tab active" data-target="images/forge-dashboard.png" data-alt="FORGE — dashboard">Dashboard</button>
+          <button class="tab" data-target="images/forge-workouts.png" data-alt="FORGE — workout plans">Workout Plans</button>
+          <button class="tab" data-target="images/forge-diet.png" data-alt="FORGE — diet plans">Diet Plans</button>
+          <button class="tab" data-target="images/forge-coaching.png" data-alt="FORGE — 1-to-1 coaching">Coaching</button>
+          <button class="tab" data-target="images/forge-progress.png" data-alt="FORGE — progress log">Progress Log</button>
+        </div>
+        <ul class="feature-list">
+          <li>Three full workout programs with sets, reps and linked video demos</li>
+          <li>Macro calculator built on the Mifflin-St Jeor formula for personalised targets</li>
+          <li>Coach booking flow with packages, testimonials and a request form</li>
+          <li>Progress log that tracks streaks and bodyweight — saved locally, no account needed</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+<!--Project 3: Accessible Museum Collection-->
+<article class="project reveal">
+    <div class="project-head">
+        <span class="project-index">03</span>
+
+        <div class="project-title">
+            <h3>Accessible Museum Collection</h3>
+            <p>
+                An accessible, responsive web application that allows users to
+                explore museum artefacts from the Victoria &amp; Albert Museum
+                using its public API. The project was designed with usability
+                and inclusivity in mind, following WCAG 2.1 accessibility
+                guidelines to provide an engaging experience for all users.
+            </p>
+        </div>
+
+        <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>WCAG 2.1</span>
+        </div>
     </div>
-  </footer>
 
-  <!-- Lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script src="script.js"></script>
+    <div class="showcase">
+
+        <div class="browser-frame">
+            <div class="browser-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="browser-url">accessible-museum.netlify.app</span>
+            </div>
+
+            <div class="browser-body">
+                <img
+                    id="museum-display"
+                    src="images/artifact.png"
+                    alt="Accessible Museum Collection Homepage">
+            </div>
+        </div>
+
+        <div class="showcase-tabs" role="tablist" aria-label="Accessible Museum Collection pages">
+
+            <button class="tab active"
+                data-target="images/artifact.png"
+                data-alt="Museum Homepage">
+                Home
+            </button>
+
+            <button class="tab"
+                data-target="images/artifact2.png"
+                data-alt="Museum Collection">
+                Collection
+            </button>
+
+            <button class="tab"
+                data-target="images/artifact3.png"
+                data-alt="Artefact Details">
+                Artefact Details
+            </button>
+
+            <button class="tab"
+                data-target="images/artifact4.png"
+                data-alt="Accessibility Features">
+                Accessibility
+            </button>
+
+        </div>
+
+        <ul class="feature-list">
+            <li>Integrated the Victoria &amp; Albert Museum API to dynamically display museum artefacts and detailed object information.</li>
+
+            <li>Developed a fully responsive interface using HTML5, CSS3 and JavaScript for desktop, tablet and mobile devices.</li>
+
+            <li>Implemented accessibility features including semantic HTML, keyboard navigation, screen reader support and WCAG 2.1 compliant colour contrast.</li>
+
+            <li>Designed an intuitive browsing experience with searchable collections, detailed artefact pages and responsive image galleries.</li>
+
+            <li>Enhanced usability through accessible layouts, performance optimisation and interactive JavaScript components.</li>
+        </ul>
+
+    </div>
+</article>
+
+<!--Project 4: Artist Portfolio & Music Promotion Website-->
+<article class="project reveal">
+  <div class="project-head">
+    <span class="project-index">04</span>
+
+    <div class="project-title">
+      <h3>Artist Portfolio & Music Promotion Website</h3>
+      <p>
+        A modern, responsive website designed to showcase an artist's music,
+        journey, latest releases, gallery, news & updates, videos and social
+        media, creating a professional platform for fans to discover, follow
+        and connect with the artist.
+      </p>
+    </div>
+
+    <div class="project-tags">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+
+  <div class="showcase">
+    <div class="browser-frame">
+      <div class="browser-bar">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="browser-url">artistportfolio.live</span>
+      </div>
+
+      <div class="browser-body">
+        <img id="artist-display"
+             src="images/artist-home.png"
+             alt="Artist Portfolio - Home Page" />
+      </div>
+    </div>
+
+    <div class="showcase-tabs" role="tablist" aria-label="Artist website pages">
+      <button class="tab active"
+              data-target="images/images/artist-home.png"
+              data-alt="Artist Home">
+        Home
+      </button>
+
+      <button class="tab"
+              data-target="images/artist-about.png"
+              data-alt="Artist About">
+        About
+      </button>
+
+      <button class="tab"
+              data-target="images/artist-music.png"
+              data-alt="Music Releases">
+        Music
+      </button>
+
+    <button class="tab"
+        data-target="images/artist-music2.png"
+        data-alt="Latest Releases">
+        Music 2
+    </button>
+
+    <button class="tab"
+        data-target="images/artist-music3.png"
+        data-alt="Streaming Platforms">
+        Music 3
+    </button>
+
+      <button class="tab"
+              data-target="images/artist-gallery.png"
+              data-alt="Artist Gallery">
+        Gallery
+      </button>
+
+      <button class="tab"
+              data-target="images/artist-news.png"
+              data-alt="Artist News & Updates">
+        News & Updates
+      </button>
+
+      <button class="tab"
+              data-target="images/artist-contact.png"
+              data-alt="Artist Contact">
+        Contact
+      </button>
+    </div>
+
+    <ul class="feature-list">
+      <li>Responsive homepage featuring the artist's latest release and immersive visual branding.</li>
+      <li>Music page with albums, singles, streaming links and embedded YouTube videos.</li>
+      <li>Journey and gallery sections showcasing the artist's story, performances and behind-the-scenes moments.</li>
+      <li>Dedicated News & Updates page featuring the latest articles, achievements, upcoming releases and announcements.</li>
+      <li>Contact page with booking enquiries and links to Spotify, Apple Music, YouTube, Instagram and other social platforms.</li>
+    </ul>
+  </div>
+</article>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-copy reveal">
+        <span class="sheet-no">SHEET 04 / CONTACT</span>
+        <h2>Let's build something worth shipping.</h2>
+        <p>Seeking graduate and junior opportunities in Web Design, Front-End Development,
+          UX/UI Design, or Web Development — where I can keep contributing to meaningful
+          digital products and growing as a developer and designer.</p>
+        <a class="btn btn-primary" href="mailto:hello@simonpramod.dev">Email me</a>
+      </div>
+
+      <div class="titleblock reveal">
+        <table>
+          <tr><td>Name</td><td>Simon Pramod</td></tr>
+          <tr><td>Role</td><td>Web Designer &amp; Developer</td></tr>
+          <tr><td>GitHub</td><td><a href="https://github.com/Simon212509" target="_blank" rel="noopener">Simon212509</a></td></tr>
+          <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/simon-pramod-a3172a221/" target="_blank" rel="noopener">simon-pramod</a></td></tr>
+          <tr><td>Twitter / X</td><td><a href="https://x.com/Simon21003" target="_blank" rel="noopener">@Simon21003</a></td></tr>
+          <tr><td>Sheet</td><td>04 of 04</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Simon Pramod</p>
+  <p class="site-footer-mono">DRAWN WITH HTML/CSS/JS · SHEET 04/04</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
